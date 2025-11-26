@@ -393,8 +393,9 @@ public class AdminController {
     @DeleteMapping("/user/{email}")
     @Operation(summary = "Delete user by email", description = "Permanently delete user and their olympiad selections")
     @ApiResponses(value = {
-        @ApiResponse(responseCode = "200", description = "User deleted successfully"),
-        @ApiResponse(responseCode = "404", description = "User not found")
+            @ApiResponse(responseCode = "200", description = "User deleted successfully"),
+            @ApiResponse(responseCode = "404", description = "User not found"),
+            @ApiResponse(responseCode = "403", description = "Forbidden - insufficient permissions or invalid token")
     })
     public ResponseEntity<String> deleteUser(@PathVariable String email) {
         try {
@@ -402,8 +403,13 @@ public class AdminController {
             return ResponseEntity.ok("User with email " + email + " deleted successfully");
         } catch (UserNotFoundException e) {
             return ResponseEntity.status(404).body(e.getMessage());
+        } catch (Exception e) {
+            System.err.println("❌ Ошибка при удалении пользователя с email " + email + ": " + e.getMessage());
+            e.printStackTrace();
+            return ResponseEntity.status(403).body("Ошибка доступа: " + e.getMessage());
         }
     }
+
 
     @GetMapping("/user/{email}")
     @Operation(summary = "Get user data by email", description = "Get user data in format compatible with update request")
