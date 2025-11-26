@@ -38,8 +38,8 @@ public class PasswordResetService {
         User user = userRepository.findByEmail(email)
                 .orElseThrow(() -> new UserNotFoundException("Пользователь с email " + email + " не найден"));
 
-        // Помечаем старые токены как использованные
-        tokenRepository.markAllTokensAsUsed(user);
+        // Удаляем ВСЕ токены пользователя (включая просроченные и использованные)
+        tokenRepository.deleteByUser(user);
 
         // Создаем новый токен
         String token = UUID.randomUUID().toString();
@@ -72,9 +72,8 @@ public class PasswordResetService {
         user.setPassword(passwordEncoder.encode(newPassword));
         userRepository.save(user);
 
-        // Помечаем токен как использованный
-        resetToken.setUsed(true);
-        tokenRepository.save(resetToken);
+        // Удаляем токен из базы после использования
+        tokenRepository.deleteById(resetToken.getId());
 
         return new ResetPasswordResponse("Пароль успешно изменен", true);
     }
