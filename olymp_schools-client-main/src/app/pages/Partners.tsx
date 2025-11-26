@@ -37,12 +37,22 @@ const partners = [
   {
     logo: "/ditsizi_logo.png",
     name: "Департамент информационных технологий, связи и защиты информации МВД России",
+    size: "h-36",
+  },
+  {
+    logo: "/migrats_logo.svg",
+    name: "Миграционная служба МВД России",
+    size: "h-36",
+  },
+  {
+    logo: "/dpd_logo.png",
+    name: "Договорно-правовой департамент МВД России",
     size: "h-38",
   },
   {
-    logo: "/migrats.png",
-    name: "Федеральная миграционная служба",
-    size: "h-38",
+    logo: "/interpol_logo.png",
+    name: "Национальное центральное бюро Интерпола МВД России",
+    size: "h-36",
   },
   {
     logo: "/consplus_logo.png",
