@@ -16,7 +16,7 @@ interface IRankings {
   firstName: string;
   middleName: string;
   region: string;
-  grade: number | string | null;
+  grade?: number | string | null;
   score: number | null;
   status:
     | "Победитель"
@@ -24,6 +24,7 @@ interface IRankings {
     | "Призер III степени"
     | "Участник";
   details: string;
+  discipline?: "society" | "infoSec";
 }
 
 export const rankings2023: IRankings[] = [
@@ -144,6 +145,119 @@ export const rankings2024: IRankings[] = [
     status: "Призер III степени",
     details:
       "https://mvd.ru/upload/site116/folder_page/047/644/342/Cherkasov_A.A.pdf",
+  },
+];
+
+export const rankings2026: IRankings[] = [
+  {
+    id: 1,
+    lastName: "Андреянов",
+    firstName: "Никита",
+    middleName: "Сергеевич",
+    region: "Новосибирская область",
+    score: 463,
+    status: "Победитель",
+    details: "/public/Andreyanov_N.S.pdf", // уже локальный
+    discipline: "infoSec",
+  },
+  {
+    id: 2,
+    lastName: "Невская",
+    firstName: "София",
+    middleName: "Станиславовна",
+    region: "Орловская область",
+    score: 416,
+    status: "Призер II степени",
+    details: "/public/Nevskaya_S.S.pdf", // исправлено
+    discipline: "infoSec",
+  },
+  {
+    id: 3,
+    lastName: "Железнаяков",
+    firstName: "Артём",
+    middleName: "Евгеньевич",
+    region: "Санкт-Петербург",
+    score: 409,
+    status: "Призер II степени",
+    details: "/public/Zheleznyakov_A.E.pdf", // исправлено
+    discipline: "infoSec",
+  },
+  {
+    id: 4,
+    lastName: "Баширов",
+    firstName: "Эрик",
+    middleName: "Рустамович",
+    region: "Санкт-Петербург",
+    score: 408,
+    status: "Призер III степени",
+    details: "/public/Bashirov_E.R.pdf", // исправлено
+    discipline: "infoSec",
+  },
+  {
+    id: 5,
+    lastName: "Волынцев",
+    firstName: "Антон",
+    middleName: "Александрович",
+    region: "Москва",
+    score: 407,
+    status: "Призер III степени",
+    details: "/public/Volyntsev_A.A.pdf", // исправлено
+    discipline: "infoSec",
+  },
+  {
+    id: 8,
+    lastName: "Малина",
+    firstName: "Виктория",
+    middleName: "Андреевна",
+    region: "Воронежская область",
+    score: 461,
+    status: "Призер II степени",
+    details: "/public/Malina_V.A.pdf",
+    discipline: "society",
+  },
+  {
+    id: 9,
+    lastName: "Ерёмин",
+    firstName: "Николай",
+    middleName: "Алексеевич",
+    region: "Санкт-Петербург",
+    score: 448,
+    status: "Призер III степени",
+    details: "/public/Eremin_N.A.pdf",
+    discipline: "society",
+  },
+  {
+    id: 10,
+    lastName: "Коробейникова",
+    firstName: "Анастасия",
+    middleName: "Максимовна",
+    region: "Московская область",
+    score: 442,
+    status: "Победитель",
+    details: "/public/Korobeynikova_A.M.pdf",
+    discipline: "society",
+  },
+  {
+    id: 11,
+    lastName: "Коршунова",
+    firstName: "Анастасия",
+    middleName: "Сергеевна",
+    region: "Ульяновская область",
+    score: 438,
+    status: "Призер II степени",
+    details: "/public/Korshunova_A.S.pdf",
+    discipline: "society",
+  },
+  {
+    id: 12,
+    lastName: "Травкина",
+    firstName: "Ульяна",
+    middleName: "Михайловна",
+    region: "Владимирская область",
+    score: 435,
+    status: "Призер III степени",
+    details: "/public/Travkina_U.M.pdf",
+    discipline: "society",
   },
 ];
 
