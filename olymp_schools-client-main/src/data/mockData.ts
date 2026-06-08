@@ -37,7 +37,7 @@ export const rankings2023: IRankings[] = [
     grade: 10,
     score: null,
     status: "Победитель",
-    details: "/public/Chernoglazov.pdf",
+    details: "/Chernoglazov.pdf",
   },
   {
     id: 7,
@@ -48,7 +48,7 @@ export const rankings2023: IRankings[] = [
     grade: 11,
     score: null,
     status: "Призер II степени",
-    details: "/public/Zhuravkin.pdf",
+    details: "/Zhuravkin.pdf",
   },
   {
     id: 8,
@@ -59,7 +59,7 @@ export const rankings2023: IRankings[] = [
     grade: 10,
     score: null,
     status: "Призер II степени",
-    details: "/public/Aleksandrova.pdf",
+    details: "/Aleksandrova.pdf",
   },
   {
     id: 9,
@@ -70,7 +70,7 @@ export const rankings2023: IRankings[] = [
     grade: null,
     score: null,
     status: "Призер III степени",
-    details: "/public/Shchukin.pdf",
+    details: "/Shchukin.pdf",
   },
   {
     id: 10,
@@ -81,7 +81,7 @@ export const rankings2023: IRankings[] = [
     grade: null,
     score: null,
     status: "Призер III степени",
-    details: "/public/Pakhnevskiy.pdf",
+    details: "/Pakhnevskiy.pdf",
   },
 ];
 
@@ -157,7 +157,7 @@ export const rankings2026: IRankings[] = [
     region: "Новосибирская область",
     score: 463,
     status: "Победитель",
-    details: "/public/Andreyanov_N.S.pdf", // уже локальный
+    details: "/Andreyanov_N.S.pdf", // уже локальный
     discipline: "infoSec",
   },
   {
@@ -168,7 +168,7 @@ export const rankings2026: IRankings[] = [
     region: "Орловская область",
     score: 416,
     status: "Призер II степени",
-    details: "/public/Nevskaya_S.S.pdf", // исправлено
+    details: "/Nevskaya_S.S.pdf", // исправлено
     discipline: "infoSec",
   },
   {
@@ -179,7 +179,7 @@ export const rankings2026: IRankings[] = [
     region: "Санкт-Петербург",
     score: 409,
     status: "Призер II степени",
-    details: "/public/Zheleznyakov_A.E.pdf", // исправлено
+    details: "/Zheleznyakov_A.E.pdf", // исправлено
     discipline: "infoSec",
   },
   {
@@ -190,7 +190,7 @@ export const rankings2026: IRankings[] = [
     region: "Санкт-Петербург",
     score: 408,
     status: "Призер III степени",
-    details: "/public/Bashirov_E.R.pdf", // исправлено
+    details: "/Bashirov_E.R.pdf", // исправлено
     discipline: "infoSec",
   },
   {
@@ -201,7 +201,7 @@ export const rankings2026: IRankings[] = [
     region: "Москва",
     score: 407,
     status: "Призер III степени",
-    details: "/public/Volyntsev_A.A.pdf", // исправлено
+    details: "/Volyntsev_A.A.pdf", // исправлено
     discipline: "infoSec",
   },
   {
@@ -212,7 +212,7 @@ export const rankings2026: IRankings[] = [
     region: "Воронежская область",
     score: 461,
     status: "Призер II степени",
-    details: "/public/Malina_V.A.pdf",
+    details: "/Malina_V.A.pdf",
     discipline: "society",
   },
   {
@@ -223,7 +223,7 @@ export const rankings2026: IRankings[] = [
     region: "Санкт-Петербург",
     score: 448,
     status: "Призер III степени",
-    details: "/public/Eremin_N.A.pdf",
+    details: "/Eremin_N.A.pdf",
     discipline: "society",
   },
   {
@@ -234,7 +234,7 @@ export const rankings2026: IRankings[] = [
     region: "Московская область",
     score: 442,
     status: "Победитель",
-    details: "/public/Korobeynikova_A.M.pdf",
+    details: "/Korobeynikova_A.M.pdf",
     discipline: "society",
   },
   {
@@ -245,7 +245,7 @@ export const rankings2026: IRankings[] = [
     region: "Ульяновская область",
     score: 438,
     status: "Призер II степени",
-    details: "/public/Korshunova_A.S.pdf",
+    details: "/Korshunova_A.S.pdf",
     discipline: "society",
   },
   {
@@ -256,7 +256,7 @@ export const rankings2026: IRankings[] = [
     region: "Владимирская область",
     score: 435,
     status: "Призер III степени",
-    details: "/public/Travkina_U.M.pdf",
+    details: "/Travkina_U.M.pdf",
     discipline: "society",
   },
 ];
